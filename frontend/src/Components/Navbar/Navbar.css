@@ -1,0 +1,157 @@
+.navbar {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0px 16px 0px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav-menu li {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 2px;
+    background-color: #000;
+}
+
+.nav-login-bag {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-login-bag button {
+    font-family: 'Sen';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0px 40px;
+    height: 40px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #000;
+}
+
+.nav-login-bag button:active {
+    background-color: var(--main-color);
+}
+
+.nav-login-bag img {
+    width: 30px;
+}
+
+.nav-bag-count {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: -58px;
+    border-radius: 100%;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    opacity: 70%;
+}
+
+.nav-bag {
+    margin: 10px 0 10px 0;
+}
+
+.nav-toggle img {
+    width: 30px;
+}
+
+.nav-toggle {
+    display: none;
+    z-index: 5;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .nav-login-bag {
+        display: none;
+    }
+
+    .nav-bag-count {
+        margin-top: -32px;
+        margin-left: -32px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0vh;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-login-bag button {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-logo p {
+        font-size: 25px;
+    }
+
+    .nav-active {
+        padding: 0px 30px;
+    }
+}
+
+.nav-active {
+    transform: translateX(0);
+}

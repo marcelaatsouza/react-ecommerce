@@ -1,0 +1,222 @@
+.bagitems {
+    padding: 120px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bagitems-left {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+.bagitems-empty {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bagitems-empty img {
+    width: 80%;
+}
+
+.bagitems-content {
+    display: flex;
+    padding: 0px 0px 20px;
+    border-bottom: 1px solid #000;
+    gap: 30px;
+}
+
+.product-img img {
+    width: 60px;
+}
+
+.bagitems-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.bagitems-details .product-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bagitems-size {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bagitems-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-box {
+    display: flex;
+}
+
+.quantity-box .quantity {
+    padding: 0px 10px;
+}
+
+.bagitems-quantity button {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    width: 16px;
+}
+
+.bagitems-quantity button:hover {
+    background-color: #e3e3e3;
+    color: #000;
+}
+
+.product-prices {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.old-price {
+    opacity: 50%;
+    text-decoration: line-through 1px;
+}
+
+.bagitems-right {
+    display: flex;
+    padding: 30px;
+}
+
+.bagitems-right hr {
+    border: none;
+    background-color: #000;
+    height: 0.5px;
+}
+
+.bagitems-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bagitems-total h2 {
+    font-family: 'The Seasons';
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.bagitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.bagitems-total button {
+    font-family: 'Sen';
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bagitems-promocode {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bagitems-promobox {
+    display: flex;
+}
+
+.bagitems-promobox button {
+    padding: 10px 0px;
+    font-size: 12px;
+    height: 100%;
+    border: 1px solid #000;
+    margin-top: 0px;
+}
+
+.bagitems-promobox button:active, .bagitems-total button:active {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+}
+
+.bagitems-promobox input {
+    padding: 10px;
+    border: 1px solid #000;
+    outline: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .bagitems {
+        padding: 100px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .bagitems-content {
+        gap: 10px;
+    }
+
+    .bagitems-right {
+        width: 500px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bagitems-content .product-icon {
+        width: 50px;
+    }
+
+    .bagitems-left {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .bagitems-details, .bagitems-details .product-name, .bagitems-details input, .product-prices {
+        font-size: 12px;
+    }
+
+    .bagitems-quantity input {
+        width: 10px;
+    }
+
+    .bagitems-right {
+        width: 90%;
+    }
+
+    .bagitems-total h2 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,166 @@
+.productdisplay {
+    padding: 30px 30px 0px 30px;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.productdisplay-img {
+    width: 500px;
+}
+
+.productdisplay-right {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productdisplay-right h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.productdisplay-right-stars {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    margin: 30px 0px;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.productdisplay-right-price-old {
+    color: #000;
+    opacity: 50%;
+    text-decoration: line-through 1px;
+}
+
+.productdisplay-right-sizes h1 {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.productdisplay-right-size {
+    display: flex;
+    margin: 30px 0px;
+    gap: 20px;
+}
+
+.productdisplay-right-size button {
+    font-family: 'Montserrat';
+    background: #fff;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.productdisplay-right .bagbutton-submit {
+    font-family: 'Sen';
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 18px;
+    width: 300px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.productdisplay-right .bagbutton-submit:active {
+    background-color: var(--main-color);
+}
+
+.productdisplay-right-category {
+    margin-top: 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.productdisplay-right-category span {
+    font-weight: 600;
+}
+
+.productdisplay-right-size .size-selected {
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+    .productdisplay-right h1 {
+        font-size: 30px;
+    }
+
+    .productdisplay-right-prices {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+
+    .productdisplay-right p {
+        font-size: 14px;
+    }
+
+    .productdisplay-right-sizes h1 {
+        font-size: 25px;
+        margin: 30px 0px;
+    }
+
+    .productdisplay-img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .productdisplay {
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .productdisplay-img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .productdisplay {
+        flex-wrap: wrap;
+    }
+
+    .productdisplay-right .bagbutton-submit {
+        width: 100%;
+    }
+
+    .productdisplay-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .productdisplay-right h1 {
+        font-size: 25px;
+    }  
+    
+    .productdisplay-right p {
+        font-size: 12px;
+    }
+
+    .productdisplay-right-size button {
+        font-size: 16px;
+    }
+
+    .productdisplay-right-sizes h1 {
+        font-size: 20px;
+    }
+}

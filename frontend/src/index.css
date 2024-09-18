@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --main-color: #b3b3b3;
+  --light-grey-color: #3e3e3e;
+}
+
+@font-face {
+  font-family: 'The Seasons';
+  src: url('../src/Components/Assets/Fontspring-DEMO-theseasons-bd.otf')
+}
+
+@font-face {
+  font-family: 'The Seasons Italic';
+  src: url('../src/Components/Assets/Fontspring-DEMO-theseasons-it.otf');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat';
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a:visited {
+  color: inherit;
+}
+
+hr {
+  border: none;
+}

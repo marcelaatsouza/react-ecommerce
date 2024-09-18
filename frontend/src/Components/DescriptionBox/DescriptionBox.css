@@ -1,0 +1,37 @@
+.descriptionbox {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    margin: 0 auto 50px;
+}
+
+.descriptionbox-navigator {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sen';
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.descriptionbox-description {
+    border: 1px solid #000;
+    padding: 20px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .descriptionbox {
+        width: 95%;
+    }
+}

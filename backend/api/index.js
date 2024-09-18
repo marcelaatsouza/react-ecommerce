@@ -8,7 +8,7 @@ const path = require("path");
 const cors = require("cors");
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-const { mongoURI } = require('./config/dbConfig');
+const { mongoURI } = require('../config/dbConfig');
 
 app.use(express.json());
 app.use(cors());
@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 const storage = multer.diskStorage({
-    destination: './upload/images',
+    destination: '../upload/images',
     filename: (req, file, cb) => {
         return cb(null, `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`)
     }
