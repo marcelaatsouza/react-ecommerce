@@ -42,7 +42,7 @@ Antes de começar, certifique-se de que você tem as seguintes ferramentas insta
    npm install
 3. Inicie o frontend:
       ```bash
-   npm start
+   npm run dev
 
 ## Iniciando o Painel Administrativo
 1. Navegue até a pasta `admin/`:
