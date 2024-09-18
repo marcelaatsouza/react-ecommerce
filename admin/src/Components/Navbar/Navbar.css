@@ -1,0 +1,65 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    margin-bottom: 1px;
+    background: #000;
+    margin: 0 auto;
+}
+
+.navbar .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 0px;
+}
+
+.navbar .logo-container .nav-logo {
+    font-family: 'Playfair Display';
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .logo-container p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0px;
+}
+
+.navbar .user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.navbar .user-container p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.navbar .user-container .user-icon {
+    width: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .user-icon {
+        width: 30px;
+    }
+
+    .navbar .user-container {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'The Seasons';
+    src: url('../src/assets/the-seasons-font.otf')
+  }

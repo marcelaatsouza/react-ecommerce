@@ -1,0 +1,105 @@
+.add-product {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 50px;
+    margin: 50px auto;
+    border: 1px solid #000;
+}
+
+.add-product h1 {
+    font-family: 'The Seasons';
+    text-align: center;
+    font-size: 40px;
+}
+
+.addproduct-itemfield {
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.addproduct-itemfield input {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #000;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    padding-left: 15px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.addproduct-itemfield p {
+    margin: 20px 0px;
+}
+
+.addproduct-price {
+    display: flex;
+    gap: 40px;
+}
+
+.addproduct-thumbnail-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.addproduct-btn {
+    font-family: 'Sen';
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.addproduct-btn:active {
+    background-color: #e3e3e3;
+}
+
+@media screen and (max-width: 1024px) {
+    .add-product {
+        margin: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .add-product {
+        width: auto;
+        padding: 30px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .add-product {
+        padding: 20px;
+    }
+
+    .add-product h1 {
+        font-size: 30px;
+    }
+
+    .addproduct-price {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .add-product h1 {
+        font-size: 26px;
+    }
+}
